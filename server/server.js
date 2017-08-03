@@ -28,6 +28,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(logger('dev'));
 app.use(cookieParser());
 
+//the order is important!
 app.use('/book', books);
 app.use('/', index);
 
