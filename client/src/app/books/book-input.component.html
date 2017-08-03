@@ -1,0 +1,21 @@
+<div class=".col-md-8 col-md-offset-2">
+    <form ngNativeValidate (ngSubmit)="onSubmit(f)" #f="ngForm"> <!-- f is reference to the object angular creates from the form-->
+        <div class="form-group">
+            <label for="book-name">Name</label>
+            <input 
+                type="text" 
+                id="book-name" class="form-control" 
+                ngModel 
+                name="bookName"
+                required>
+            <label for="book-author">Author</label>
+            <input 
+                type="text" 
+                id="book-author" class="form-control" 
+                ngModel 
+                name="bookAuthor"
+                required>
+        </div>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+</div>
