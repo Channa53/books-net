@@ -14,6 +14,10 @@ router.post('/', function (req, res, nex){
                 error: err
             });
         }
+        res.status(201).json({
+            message: 'Saved message',
+            obj: result //the book object as it saved in the DB, including its ID.
+        });
     });
 });
 module.exports = router;

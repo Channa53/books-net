@@ -33,7 +33,7 @@ import { SigninComponent } from "./auth/signin.component";
   ],
   imports: [
     BrowserModule,
-    HttpModule, 
+    HttpModule, // unlock http service
     FormsModule, 
     ReactiveFormsModule,
     routing

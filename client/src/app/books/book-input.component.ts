@@ -13,7 +13,11 @@ export class BookInputComponent {
 
     onSubmit(form: NgForm){
         const book = new Book (form.value.bookName, form.value.bookAuthor)
-        this.bookService.addBook(book);
+        this.bookService.addBook(book).subscribe(
+            data => console.log(data),
+            error => console.error(error),
+            
+        );
         form.resetForm();
     }
 }

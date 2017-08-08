@@ -6,7 +6,7 @@ router.get('/', function (req, res, next) {
     res.render('index.html');
 });
 
-router.get('/new-book/', function (req, res, next) {
+/*router.get('/new-book/', function (req, res, next) {
     Book.find({}, function(err, docs){
         if (err){
             res.send('Error getting books!');
@@ -22,6 +22,6 @@ router.post('/new-book', function(req, res, next) {
     });
     book.save();
     res.redirect('/new-book/');
-});
+});*/
 
 module.exports = router;
