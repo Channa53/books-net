@@ -15,10 +15,11 @@ import { routing } from "./app.routing";
 import { LogoutComponent } from "./auth/logout.component";
 import { SignupComponent } from "./auth/signup.component";
 import { SigninComponent } from "./auth/signin.component";
+import { BooksSliderComponent } from "./books/books-slider.component";
 
 
 @NgModule({
-  declarations: [
+  declarations: [ // all components in the project
     AppComponent,
     BookComponent,
     UsersComponent, 
@@ -29,11 +30,12 @@ import { SigninComponent } from "./auth/signin.component";
     HeaderComponent,
     LogoutComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    BooksSliderComponent
   ],
-  imports: [
+  imports: [ // all amgular module we want to unlock for the project
     BrowserModule,
-    HttpModule, // unlock http service
+    HttpModule, 
     FormsModule, 
     ReactiveFormsModule,
     routing

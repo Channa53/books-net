@@ -1,0 +1,26 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto nav-pills">
+            <li routerLinkActive="active"><a [routerLink]="['/books']">Books</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['/auth']">Connect</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<header>
+    <div class="jumbotron text-center">
+        <h1>Welcome To Books-Net!</h1>
+    </div>
+    <app-books-slider></app-books-slider>
+    <div class="row">
+        <nav class="col-md-8 col-md-offset-2">
+            <ul class="nav nav-pills">
+                <li routerLinkActive="active"><a [routerLink]="['/books']">Books</a></li>
+                <li routerLinkActive="active"><a [routerLink]="['/auth']">Connect</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

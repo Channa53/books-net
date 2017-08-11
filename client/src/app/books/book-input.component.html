@@ -5,17 +5,18 @@
             <input 
                 type="text" 
                 id="book-name" class="form-control" 
-                ngModel 
+                [ngModel]="book?.name"
                 name="bookName"
                 required>
             <label for="book-author">Author</label>
             <input 
                 type="text" 
                 id="book-author" class="form-control" 
-                ngModel 
+                [ngModel]="book?.author"
                 name="bookAuthor"
                 required>
         </div>
+            <button type="button" class="btn btn-danger" (click)="onClear(f)">Clear</button>
         <button class="btn btn-primary" type="submit">Save</button>
     </form>
 </div>
